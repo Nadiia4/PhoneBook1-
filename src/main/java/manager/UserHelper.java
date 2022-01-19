@@ -1,7 +1,9 @@
 package manager;
 
+import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 //naslednik helperBase
 public class UserHelper extends HelperBase{
@@ -22,6 +24,11 @@ public class UserHelper extends HelperBase{
         type(By.cssSelector("[placeholder='Email']"),email);
         type(By.cssSelector("[placeholder='Password']"), password);
     }
+    public void fillLoginRegistrationForm(User user){
+
+        type(By.cssSelector("[placeholder='Email']"), user.getEmail());
+        type(By.cssSelector("[placeholder='Password']"), user.getPassword());
+    }
 
     public void submitLoginForm() {
 
@@ -33,5 +40,12 @@ public class UserHelper extends HelperBase{
     public void submitRegistrationForm() {
         click(By.xpath("//button[2]"));
         //click(By.cssSelector("//button[text()= 'Registration']"));
+    }
+
+    public boolean isRegistrationSuccess() {
+        WebElement signOut = wd.findElement(By.xpath("//button[text()='Sign Out']"));
+        String button = signOut.getText();
+        return button.equals("Sign Out");
+
     }
 }
