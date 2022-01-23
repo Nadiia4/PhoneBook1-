@@ -42,10 +42,19 @@ public class UserHelper extends HelperBase{
         //click(By.cssSelector("//button[text()= 'Registration']"));
     }
 
-    public boolean isRegistrationSuccess() {
+    public boolean isLoginRegistrationSuccess() {
         WebElement signOut = wd.findElement(By.xpath("//button[text()='Sign Out']"));
         String button = signOut.getText();
         return button.equals("Sign Out");
 
+    }
+
+    public boolean isLogOutPresent() {
+      return isElementPresent(By.xpath("//button[text()='Sign Out']"));
+
+    }
+
+    public void logout() {
+        click(By.xpath("//button[text()='Sign Out']"));
     }
 }

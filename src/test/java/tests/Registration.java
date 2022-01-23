@@ -2,10 +2,19 @@ package tests;
 
 import models.User;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Registration extends TestBase{
+    @BeforeMethod
+    public void preCondition(){
+        //if logged(logout present???)--->logout
 
+        if(app.getUserHelper().isLogOutPresent()){
+            app.getUserHelper().logout();
+        }
+
+    }
 
     @Test
 public void registrationSuccessTest(){
@@ -16,7 +25,7 @@ public void registrationSuccessTest(){
         app.getUserHelper().submitRegistrationForm();
         app.getUserHelper().pause(2000);
 
-        Assert.assertTrue(app.getUserHelper().isRegistrationSuccess());
+        Assert.assertTrue(app.getUserHelper().isLoginRegistrationSuccess());
 
     }
     @Test
@@ -32,7 +41,7 @@ public void registrationSuccessTest(){
         app.getUserHelper().submitRegistrationForm();
 
         app.getUserHelper().pause(2000);
-        Assert.assertTrue(app.getUserHelper().isRegistrationSuccess());
+        Assert.assertTrue(app.getUserHelper().isLoginRegistrationSuccess());
 
     }
 
