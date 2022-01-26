@@ -11,6 +11,8 @@ public class ApplicationManager {
 
     WebDriver wd;
     UserHelper userHelper;//ssilka na class pomoshnik
+    ContactHelper contactHelper;
+
 
     public  void init(){
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -23,6 +25,7 @@ public class ApplicationManager {
        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
        userHelper = new UserHelper(wd);
+       contactHelper = new ContactHelper(wd);
 
     }
 
@@ -33,4 +36,13 @@ public class ApplicationManager {
     public UserHelper getUserHelper() {
         return userHelper;
     }
+
+    public ContactHelper getContactHelper() {
+        //generiruem getter
+        return contactHelper;
+    }
+
+
+
 }
+//znakomstvo, realizaciya, oformlenie ---> v tri hoda
