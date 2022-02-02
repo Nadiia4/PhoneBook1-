@@ -20,7 +20,7 @@ public void preCondition(){
 
     @Test
     public void loginSuccessTest() {
-
+logger.info("The test start with email:[noa@gmail.com] & password: [Nnoa12345$]");
         app.getUserHelper().openLoginRegistrationForm();
         app.getUserHelper().fillLoginRegistrationForm("noa@gmail.com", "Nnoa12345$");
         app.getUserHelper().submitLoginForm();
@@ -33,7 +33,7 @@ public void preCondition(){
     public void loginSuccessModel() {
 
         User user = new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$");
-
+logger.info("The test start with data: " + user.toString());
         app.getUserHelper().openLoginRegistrationForm();
         app.getUserHelper().fillLoginRegistrationForm(user);
         app.getUserHelper().submitLoginForm();

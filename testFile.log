@@ -1,0 +1,10 @@
+1640 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 97.0.4692.71 (resolved driver for Chrome 97)
+1716 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\נדיה\.cache\selenium\chromedriver\win32\97.0.4692.71\chromedriver.exe
+4515 [Test worker] INFO  manager.ApplicationManager - All tests start in 'Chrome' browser
+5695 [Test worker] INFO  tests.TestBase - Name of test --->loginSuccessTest
+10770 [Test worker] INFO  tests.TestBase - The test start with email:[noa@gmail.com] & password: [Nnoa12345$]
+22:06:48 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 97.0.4692.71 (resolved driver for Chrome 97)
+22:06:48 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\נדיה\.cache\selenium\chromedriver\win32\97.0.4692.71\chromedriver.exe
+22:06:51 INFO  manager.ApplicationManager - All tests start in 'Chrome' browser
+22:06:52 INFO  tests.TestBase - Name of test --->loginSuccessTest
+22:06:57 INFO  tests.TestBase - The test start with email:[noa@gmail.com] & password: [Nnoa12345$]
