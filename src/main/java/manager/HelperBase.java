@@ -38,4 +38,5 @@ public class HelperBase {
         return wd.findElements(locator).size()>0;
 
     }
+
 }

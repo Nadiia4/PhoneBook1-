@@ -1,5 +1,0 @@
-22:17:17 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 97.0.4692.71 (resolved driver for Chrome 97)
-22:17:17 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\נדיה\.cache\selenium\chromedriver\win32\97.0.4692.71\chromedriver.exe
-22:17:20 INFO  manager.ApplicationManager - All tests start in 'Chrome' browser
-22:17:21 INFO  tests.TestBase - Name of test --->loginSuccessTest
-22:17:26 INFO  tests.TestBase - The test start with email:[noa@gmail.com] & password: [Nnoa12345$]

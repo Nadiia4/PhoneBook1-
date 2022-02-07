@@ -1,0 +1,4 @@
+14:57:11 INFO  manager.ApplicationManager - All tests start in 'Chrome' browser
+14:57:12 INFO  tests.TestBase - Name of test --->removeOneContact
+14:57:18 INFO  tests.TestBase - Login was completed for userUser{email='lina@gmail.com', password='Lina12345$'}
+14:57:19 INFO  tests.TestBase - Contact was added to Contact(name=Olga3439, lastName=Semenko, phone=06487125893439, email=olga3439@gmail.com, address=Tel Aviv, Rotshild,14, description=work)

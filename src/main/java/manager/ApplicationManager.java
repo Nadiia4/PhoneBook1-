@@ -18,19 +18,26 @@ public class ApplicationManager {
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);//sozdanie ekzemplyara loggera
 
     public  void init(){
-        ChromeOptions chromeOptions = new ChromeOptions();
-        WebDriverManager.chromedriver().setup();
+//        ChromeOptions chromeOptions = new ChromeOptions();//-------------------
+//        WebDriverManager.chromedriver().setup();//------------
+//
+//        System.setProperty("webdriver.chrome.driver", "C:/Users/Nadii/PhoneBook1-/chromedriver.exe");//---------------------
+//       wd = new ChromeDriver();
+//logger.info("All tests start in 'Chrome' browser");//zapis v consol
+//       wd.manage().window().maximize();
+//       wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/home");
+//       wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//
+//       userHelper = new UserHelper(wd);
+//       contactHelper = new ContactHelper(wd);
+        wd = new ChromeDriver();
+        logger.info("All tests start in 'Chrome' browser");//zapis v consol
+        wd.manage().window().maximize();
+        wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/home");
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Nadii/PhoneBook1-/chromedriver.exe");
-       wd = new ChromeDriver();
-logger.info("All tests start in 'Chrome' browser");//zapis v consol
-       wd.manage().window().maximize();
-       wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/home");
-       wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-       userHelper = new UserHelper(wd);
-       contactHelper = new ContactHelper(wd);
-
+        userHelper = new UserHelper(wd);
+        contactHelper = new ContactHelper(wd);
     }
 
     public void stop(){

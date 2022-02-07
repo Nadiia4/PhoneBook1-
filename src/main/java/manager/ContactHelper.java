@@ -62,4 +62,12 @@ public class ContactHelper extends HelperBase {
         }
         return false;
     }
+
+    public void removeOneContact() {
+        WebElement contact = wd.findElement(By.cssSelector(".contact-item_card__2SOIM"));
+    contact.click();
+    click(By.xpath("//button[.='Remove']"));
+    }
+
+
 }

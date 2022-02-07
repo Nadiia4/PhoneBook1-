@@ -19,7 +19,7 @@ public class AddNewContactTests extends TestBase {
 
     }
 
-    @Test
+    @Test(invocationCount = 3)  // test zapystitsya 3 raza
     public void addNewContactSuccess() {
 
 //        if(count>5){
@@ -57,7 +57,7 @@ public class AddNewContactTests extends TestBase {
         //  Assert.assertTrue(app.isContactPageDisplayed());
         //if countStart - countEnd = -1
         Assert.assertEquals(countEnd-countStart,1);
-        //tEquals(countEnd-countStart, 1);
+
         //if list contact with name + phone
         Assert.assertTrue(app.getContactHelper().isContactCreateByName(contact.getName()));
         Assert.assertTrue(app.getContactHelper().isContactCreateByPhone(contact.getPhone()));
