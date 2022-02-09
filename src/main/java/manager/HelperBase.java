@@ -1,12 +1,16 @@
 package manager;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import java.io.File;
+import java.io.IOException;
 
 public class HelperBase {
 
     WebDriver wd;
-
+    Logger logger = LoggerFactory.getLogger(HelperBase.class);
     public HelperBase(WebDriver wd) {
 
         this.wd = wd;
@@ -38,5 +42,17 @@ public class HelperBase {
         return wd.findElements(locator).size()>0;
 
     }
+    public void takeScreenShot(String pathToFile){
+        File tmp = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+        File screen = new File(pathToFile);//ssilka kyda skiduvatj files
+
+        try{
+            Files.copy(tmp,screen);//iz kakogo file i v kakoy
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+    }
+
 
 }

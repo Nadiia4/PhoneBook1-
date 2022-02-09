@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class RemoveContactTests extends TestBase{
+public class RemoveContactTests extends TestBase {
 
 
     @BeforeMethod
@@ -22,12 +22,14 @@ public class RemoveContactTests extends TestBase{
             logger.info("Login was completed for user" + user.toString());
         }
 //providerContact ===> add 3 contacts
-        if(app.getContactHelper().countOfContacts()<3){
-            do {providerContact();}
-                    while(app.getContactHelper().countOfContacts()<3);
+        if (app.getContactHelper().countOfContacts() < 2) {
+            do {
+                providerContact();
             }
-
+            while (app.getContactHelper().countOfContacts() < 2);
         }
+
+    }
 
 
     private void providerContact() {
@@ -35,7 +37,7 @@ public class RemoveContactTests extends TestBase{
         System.out.println(index);
 
         Contact contact = Contact.builder()
-                .name("Olga"+ index)
+                .name("Olga" + index)
                 .lastName("Semenko")
                 .phone("0648712589" + index)
                 .email("olga" + index + "@gmail.com")
@@ -54,7 +56,7 @@ public class RemoveContactTests extends TestBase{
 
 
     @Test
-    public void removeOneContact(){
+    public void removeOneContact() {
         int countStart = app.getContactHelper().countOfContacts();
         System.out.println(countStart);
 
@@ -64,13 +66,16 @@ public class RemoveContactTests extends TestBase{
         int countEnd = app.getContactHelper().countOfContacts();
         System.out.println(countEnd);
 
-        Assert.assertEquals(countStart-countEnd,1);
+        Assert.assertEquals(countStart - countEnd, 1);
         //Assert.assertTrue(countStart - countEnd == 1);
 
     }
 
     @Test
-    public void removeAllContacts(){
+    public void removeAllContacts() {
+
+        app.getContactHelper().removeAllContacts();
+        Assert.assertTrue(app.getContactHelper().isContactsListIsEmpty());
 
     }
 }

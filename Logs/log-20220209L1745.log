@@ -1,0 +1,71 @@
+17:45:58 INFO  manager.ApplicationManager - All tests start in 'Chrome' browser
+17:45:59 INFO  tests.TestBase - Name of test --->loginSuccessTestDataProvider
+17:45:59 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+17:46:04 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+17:46:04 INFO  tests.TestBase - The test start with email:lina@gmail.com && password :Lina12345$
+17:46:04 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [href= '/login']
+17:46:04 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [href= '/login']--> was found
+17:46:04 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+17:46:04 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+17:46:04 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+17:46:04 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+17:46:04 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+17:46:04 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+17:46:04 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+17:46:04 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+17:46:05 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+17:46:05 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+17:46:05 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+17:46:05 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+17:46:05 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: button
+17:46:05 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: button--> was found
+17:46:07 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+17:46:07 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+17:46:07 INFO  tests.TestBase - Name of test --->loginSuccessTestDataProvider
+17:46:07 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+17:46:07 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+17:46:07 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+17:46:07 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+17:46:07 INFO  tests.TestBase - The test start with email:lina@gmail.com && password :Lina12345$
+17:46:07 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [href= '/login']
+17:46:07 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [href= '/login']--> was found
+17:46:07 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+17:46:07 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+17:46:07 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+17:46:07 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+17:46:07 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+17:46:07 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+17:46:08 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+17:46:08 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+17:46:08 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+17:46:08 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+17:46:08 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+17:46:08 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+17:46:08 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: button
+17:46:08 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: button--> was found
+17:46:10 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+17:46:10 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+17:46:10 INFO  tests.TestBase - Name of test --->loginSuccessTestDataProvider
+17:46:10 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+17:46:10 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+17:46:10 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+17:46:10 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+17:46:10 INFO  tests.TestBase - The test start with email:lina@gmail.com && password :Lina12345$
+17:46:10 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [href= '/login']
+17:46:10 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [href= '/login']--> was found
+17:46:10 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+17:46:10 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+17:46:10 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+17:46:10 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+17:46:10 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+17:46:10 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+17:46:10 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+17:46:10 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+17:46:10 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+17:46:11 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+17:46:11 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+17:46:11 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+17:46:11 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: button
+17:46:11 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: button--> was found
+17:46:13 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+17:46:13 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
