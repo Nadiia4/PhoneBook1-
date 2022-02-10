@@ -34,13 +34,26 @@ public class Login extends TestBase {
 
 
     @Test(dataProvider = "LoginValidDataCSV", dataProviderClass = MyDataProvider.class)
-//DOMASHKA!!!!!!!!!!!!!!!!!!!!!!!!
-    //TEST VUCHITKA IZ FAILA
-    public void loginSuccessTestDataProvider(User user) {
-        logger.info("The test 'Login valid data' start with data---->" + user.toString());
+    //TEST VUCHITKA IZ FAILA cherez user
+    public void loginSuccessTestDPfromFile(User user) {
+        logger.info("The test 'Login valid dataCSV' start with data---->" + user.toString());
 
         app.getUserHelper().openLoginRegistrationForm();
         app.getUserHelper().fillLoginRegistrationForm(user);
+        app.getUserHelper().submitLoginForm();
+
+        app.getUserHelper().pause(2000);
+        Assert.assertTrue(app.getUserHelper().isLoginRegistrationSuccess());//isLogged
+
+
+    }
+    @Test(dataProvider = "LoginValidDataCSV2", dataProviderClass = MyDataProvider.class)//DOMASHKA!!!!!!!!!!!!!!!!!!!
+    //TEST VUCHITKA IZ FAILA cherez 2 string
+    public void loginSuccessTestDPfromFileString(String email, String password) {
+        logger.info("The test 'Login valid dataCSV2' start with email:" + email +"; password:"+password);
+
+        app.getUserHelper().openLoginRegistrationForm();
+        app.getUserHelper().fillLoginRegistrationForm(email, password);
         app.getUserHelper().submitLoginForm();
 
         app.getUserHelper().pause(2000);

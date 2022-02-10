@@ -25,12 +25,12 @@ public class MyDataProvider {
 
 
     @DataProvider
-    public Iterator<Object[]> LoginValidDataCSV() throws IOException {//DOMASHKA!!!!!!!!!!!!!!!!!!!
-//TEST VUCHITKA IZ FAILA
+    public Iterator<Object[]> LoginValidDataCSV() throws IOException {
+//TEST VUCHITKA IZ FAILA cherez user
         List<Object[]> list = new ArrayList<>();
-        //from file!!!!!!!!!!!!!!!!!
+
         BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/login.csv")));
-        String line = reader.readLine(); //lina@gmail.com,lina12345$
+        String line = reader.readLine();
 
         while (line != null) {
 
@@ -38,9 +38,28 @@ public class MyDataProvider {
 
             list.add(new Object[]{new User().withEmail(split[0]).withPassword(split[1])});
 
-            line = reader.readLine();//nachinaet snova chitatj sleduyshie linii/stroki poka oni estj
+            line = reader.readLine();
         }
 
+        return list.iterator();
+    }
+
+
+    @DataProvider
+    public Iterator<Object[]> LoginValidDataCSV2() throws IOException {//DOMASHKA!!!!!!!!!!!!!!!!!!!!
+//TEST VUCHITKA IZ FAILA cherez 2 String
+        List<Object[]> list = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/login.csv")));
+        String line = reader.readLine();
+
+        while (line != null) {
+
+            String[] split = line.split(",");
+
+            list.add(new Object[]{split[0],split[1]});
+
+            line = reader.readLine();
+        }
         return list.iterator();
 
     }
