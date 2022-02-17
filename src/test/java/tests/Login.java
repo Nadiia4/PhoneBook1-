@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Login extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         //if logged(logout present???)--->logout
 
@@ -19,7 +19,7 @@ public class Login extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = {"web"})
     public void loginSuccessTest() {
 
         app.getUserHelper().openLoginRegistrationForm();

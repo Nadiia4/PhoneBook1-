@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suitel" verbose="1">
+    <test name="Reg">
+        <classes>
+            <class name="tests.AddNewContactTests"/>
+            <class name="tests.Registration"/>
+        </classes>
+    </test>
+</suite>

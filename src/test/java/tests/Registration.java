@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Registration extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         //if logged(logout present???)--->logout
 
@@ -16,7 +16,7 @@ public class Registration extends TestBase{
 
     }
 
-    @Test
+    @Test(groups = {"web"})
 public void registrationSuccessTest(){
         int index = (int)(System.currentTimeMillis()/1000)%3600;
         System.out.println(index);

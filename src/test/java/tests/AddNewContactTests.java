@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class AddNewContactTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (!app.getUserHelper().isLogOutPresent()) {
             User user = new User().withEmail("lina@gmail.com").withPassword("Lina12345$");
@@ -20,7 +20,8 @@ public class AddNewContactTests extends TestBase {
 
     }
 
-    @Test//(invocationCount = 3)  // test zapystitsya 3 raza
+    @Test(groups = {"web"})
+    //(invocationCount = 3)  // test zapystitsya 3 raza
     public void addNewContactSuccess() {
 
 //        if(count>5){
@@ -113,7 +114,7 @@ public class AddNewContactTests extends TestBase {
 
     }
 
-    @Test(dataProvider = "addContactValidDataModel", dataProviderClass = MyDataProvider.class)
+    @Test(dataProvider = "addContactValidDataModel", dataProviderClass = MyDataProvider.class, enabled = false)//ne budet zapyskatj
     // test zapystitsya 3 raza
     public void addNewContactSuccessDT(Contact contact) {//DataProvider
 
@@ -138,7 +139,7 @@ public class AddNewContactTests extends TestBase {
         Assert.assertTrue(app.getContactHelper().isContactCreateByPhone(contact.getPhone()));
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition() {
 
         app.getUserHelper().logout();
