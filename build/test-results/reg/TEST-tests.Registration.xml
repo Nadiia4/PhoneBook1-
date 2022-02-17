@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.Registration" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-14T18:48:18" hostname="LAPTOP-LTM1R0HP" time="3.227">
+  <properties/>
+  <testcase name="registrationSuccessTest" classname="tests.Registration" time="3.227"/>
+  <system-out><![CDATA[20:48:18 INFO  tests.TestBase - Name of test --->registrationSuccessTest
+20:48:18 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+20:48:18 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+20:48:18 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+20:48:18 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+2898
+20:48:18 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [href= '/login']
+20:48:18 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [href= '/login']--> was found
+20:48:18 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+20:48:18 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+20:48:19 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+20:48:19 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+20:48:19 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Email']
+20:48:19 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Email']--> was found
+20:48:19 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+20:48:19 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+20:48:19 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+20:48:19 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+20:48:19 INFO  manager.MyListener - Start find 'element'-----> By.cssSelector: [placeholder='Password']
+20:48:19 INFO  manager.MyListener - The element with 'locator'---> By.cssSelector: [placeholder='Password']--> was found
+20:48:19 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[2]
+20:48:19 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[2]--> was found
+20:48:21 INFO  manager.MyListener - Start find 'element'-----> By.xpath: //button[text()='Sign Out']
+20:48:21 INFO  manager.MyListener - The element with 'locator'---> By.xpath: //button[text()='Sign Out']--> was found
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
