@@ -29,7 +29,7 @@ public class ApplicationManager {
 
     public  void init(){
         //ChromeOptions chromeOptions = new ChromeOptions();//
-
+// new commit
 //
 //      System.setProperty("webdriver.chrome.driver", "C:/Users/Nadii/PhoneBook1-/chromedriver.exe");//---------------------
 //       wd = new ChromeDriver();
